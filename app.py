@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import openai
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -261,6 +262,7 @@ if st.session_state.df is not None:
                                     exec_globals = {
                                         "df": df,
                                         "pd": pd,
+                                        "np": np,
                                         "plt": plt,
                                         "sns": sns,
                                         "st": st,
